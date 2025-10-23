@@ -21,6 +21,17 @@
   <meta name="twitter:title" content="Doraste_Lines - Creative Words & Visual Art" />
   <meta name="twitter:description" content="Explore the creative sanctuary of Don Doraste Buntu with images, videos, and original creations." />
   <meta name="twitter:image" content="logo.png" />
+	<script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'c')) {
+      e.preventDefault();
+    }
+    if (e.keyCode === 123) { // F12
+      e.preventDefault();
+    }
+  };
+</script>
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -229,6 +240,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
