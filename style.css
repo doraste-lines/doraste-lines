@@ -332,3 +332,11 @@ body.dark #backToTop {
 body.dark #backToTop:hover {
   background: #ccc;
 }
+/* Prevent text and image selection */
+body, img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
