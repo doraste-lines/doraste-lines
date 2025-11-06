@@ -362,22 +362,10 @@ function initLikeShare() {
 // Run after page loads
 window.addEventListener('DOMContentLoaded', initLikeShare);
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    if (!sessionStorage.getItem("fadedIn")) {
-      document.body.style.opacity = 0;
-      setTimeout(() => {
-        document.body.style.transition = "opacity 1.2s ease-in";
-        document.body.style.opacity = 1;
-        sessionStorage.setItem("fadedIn", "true");
-      }, 100);
-    } else {
-      document.body.style.opacity = 1;
-    }
-  });
-</script>
+
 	
 </body>
 </html>
+
 
 
