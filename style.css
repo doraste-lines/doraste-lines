@@ -339,3 +339,6 @@ body, img {
   -ms-user-select: none;
   user-select: none;
 }
+html {
+  scroll-behavior: smooth;
+}
