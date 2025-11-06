@@ -362,10 +362,29 @@ function initLikeShare() {
 // Run after page loads
 window.addEventListener('DOMContentLoaded', initLikeShare);
 </script>
+	<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const boxes = document.querySelectorAll(".image-box, .video-box");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = "running";
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    boxes.forEach(box => {
+      box.style.animationPlayState = "paused";
+      observer.observe(box);
+    });
+  });
+</script>
 
 	
 </body>
 </html>
+
 
 
 
