@@ -342,26 +342,3 @@ body, img {
 html {
   scroll-behavior: smooth;
 }
-/* === Global Fade-In Animation for All Visible Elements === */
-* {
-  opacity: 0;
-  transform: translateY(25px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
-}
-
-/* Active state when the element is visible */
-.fade-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Optional stagger for natural look */
-.fade-stagger:nth-child(2n) {
-  transition-delay: 0.2s;
-}
-.fade-stagger:nth-child(3n) {
-  transition-delay: 0.4s;
-}
-.fade-stagger:nth-child(4n) {
-  transition-delay: 0.6s;
-}
