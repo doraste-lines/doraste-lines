@@ -362,29 +362,11 @@ function initLikeShare() {
 // Run after page loads
 window.addEventListener('DOMContentLoaded', initLikeShare);
 </script>
-	<script>
-// Automatically fade in everything as it appears
-document.addEventListener("DOMContentLoaded", () => {
-  const allElements = document.querySelectorAll("body *:not(script):not(style):not(link)");
-  
-  allElements.forEach(el => el.classList.add("fade-stagger"));
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("fade-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  allElements.forEach(el => observer.observe(el));
-});
-</script>
 
 	
 </body>
 </html>
+
 
 
 
