@@ -342,4 +342,25 @@ body, img {
 html {
   scroll-behavior: smooth;
 }
-  
+/* Search Button */
+.search-btn {
+  position: fixed;
+  top: 20px;
+  right: 60px; /* slightly left of About Me button */
+  background: none;
+  border: none;
+  font-size: 1.5rem; /* matches About Me icon */
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 999;
+}
+
+.search-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Adjust About Me position if needed */
+.about-btn {
+  right: 20px; /* keep this */
+}  
+
