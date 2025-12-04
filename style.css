@@ -342,3 +342,65 @@ body, img {
 html {
   scroll-behavior: smooth;
 }
+.search-btn {
+  position: fixed;
+  top: 20px;
+  right: 60px; /* adjust to sit left of about button */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.search-btn:hover {
+  transform: scale(1.2);
+  }
+.search-content {
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+}
+.search-content input {
+  width: 80%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.3s;
+}
+.search-content input:focus {
+  border-color: #1c1c1c;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tag-list button {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tag-list button:hover {
+  background: #1c1c1c;
+  color: #fff;
+  border-color: #1c1c1c;
+}
+#searchResults {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media(max-width:768px){
+  #searchResults {
+    grid-template-columns: 1fr;
+  }
+  }
