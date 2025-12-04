@@ -344,20 +344,20 @@ html {
 }
 /* Search Button */
 .search-btn {
-  position: fixed;
+  position: absolute; /* Change from fixed to absolute */
   top: 20px;
-  right: 60px; /* slightly left of About Me button */
+  left: 60px; /* Adjust to position left of About Me icon */
   background: none;
   border: none;
-  font-size: 1.5rem; /* matches About Me icon */
+  font-size: 1.5rem;
   cursor: pointer;
   transition: transform 0.3s;
-  z-index: 999;
+  z-index: 2; /* Make sure it's below the boxes (boxes z-index is higher) */
 }
 
 .search-btn:hover {
   transform: scale(1.2);
-}
+  }
 
 /* Adjust About Me position if needed */
 .about-btn {
@@ -416,4 +416,5 @@ html {
   pointer-events: none;
   border-radius: 12px;
   }
+
 
