@@ -170,3 +170,36 @@ function initSearchPage() {
 
 // Initialize after DOM loaded
 window.addEventListener('DOMContentLoaded', initSearchPage);
+// Get all boxes
+const boxes = document.querySelectorAll('#images .box, #videos .box');
+
+// Filter function
+function filterByTag(tag) {
+  let found = false;
+  boxes.forEach(box => {
+    const altText = (box.querySelector('img')?.alt || box.querySelector('video')?.title || "").toLowerCase();
+    if (altText.includes(tag.toLowerCase())) {
+      box.style.display = "block"; // Show box
+      found = true;
+    } else {
+      box.style.display = "none"; // Hide box
+    }
+  });
+  if(!found){
+    // Optionally display a "No results" message
+    document.getElementById("noResultsMsg").style.display = "block";
+  } else {
+    document.getElementById("noResultsMsg").style.display = "none";
+  }
+}
+function showSearch() {
+  document.querySelector('#home').classList.remove('active');
+  document.querySelector('#searchPage').classList.add('active');
+  document.body.classList.add('search-active'); // for back button styling
+}
+
+function backToHome() {
+  document.querySelector('#searchPage').classList.remove('active');
+  document.querySelector('#home').classList.add('active');
+  document.body.classList.remove('search-active');
+                        }
