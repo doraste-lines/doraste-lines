@@ -97,3 +97,76 @@ window.addEventListener("scroll", () => {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+// --- Show Search Page ---
+function showSearch() {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('search').classList.add('active');
+}
+
+// --- Auto-detect tags from alt text ---
+function initSearchPage() {
+  const boxes = [...document.querySelectorAll('#images .box, #videos .box')];
+  const tagCounts = {};
+  const resultsContainer = document.getElementById('searchResults');
+  const tagListContainer = document.getElementById('tagList');
+
+  // Extract words from alt text
+  boxes.forEach(box => {
+    const alt = (box.querySelector('img')?.alt || box.querySelector('video')?.alt || '').toLowerCase();
+    const words = alt.match(/\b[a-z]{3,}\b/g); // words with 3+ letters
+    if(!words) return;
+
+    box.dataset.tags = words.join(' ');
+    words.forEach(w => tagCounts[w] = (tagCounts[w] || 0) + 1);
+  });
+
+  // Sort tags: meaningful first, then by frequency
+  const meaningful = ['motivation','inspiration','poem','faith','space','time','life','history','work','blessing','dream','love','nature','journey','hope'];
+  const allTags = Object.keys(tagCounts).sort((a,b)=>{
+    if(meaningful.includes(a) && !meaningful.includes(b)) return -1;
+    if(!meaningful.includes(a) && meaningful.includes(b)) return 1;
+    return tagCounts[b]-tagCounts[a];
+  }).slice(0, 15); // top 15 tags
+
+  // Display tags
+  allTags.forEach(tag=>{
+    const btn = document.createElement('button');
+    btn.textContent = tag;
+    btn.onclick = () => filterResults(tag);
+    tagListContainer.appendChild(btn);
+  });
+
+  // Display all boxes initially
+  boxes.forEach(box => resultsContainer.appendChild(box.cloneNode(true)));
+
+  // Filter function
+  function filterResults(tag){
+    resultsContainer.innerHTML = '';
+    const filtered = boxes.filter(box => box.dataset.tags.includes(tag.toLowerCase()));
+    if(filtered.length === 0) {
+      resultsContainer.innerHTML = `<p>No results found for "${tag}"</p>`;
+      return;
+    }
+    filtered.forEach(box => resultsContainer.appendChild(box.cloneNode(true)));
+  }
+
+  // Search input
+  document.getElementById('searchInput').addEventListener('input', function(){
+    const term = this.value.toLowerCase();
+    if(!term) {
+      resultsContainer.innerHTML = '';
+      boxes.forEach(box => resultsContainer.appendChild(box.cloneNode(true)));
+      return;
+    }
+    const filtered = boxes.filter(box => box.dataset.tags.includes(term));
+    resultsContainer.innerHTML = '';
+    if(filtered.length===0){
+      resultsContainer.innerHTML = `<p>No results found for "${term}"</p>`;
+      return;
+    }
+    filtered.forEach(box => resultsContainer.appendChild(box.cloneNode(true)));
+  });
+}
+
+// Initialize after DOM loaded
+window.addEventListener('DOMContentLoaded', initSearchPage);
