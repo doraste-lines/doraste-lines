@@ -404,3 +404,10 @@ html {
     grid-template-columns: 1fr;
   }
   }
+#searchBackBtn {
+  display: none; /* default hidden */
+}
+
+.page.search-active #searchBackBtn {
+  display: block; /* show only on search page */
+}
