@@ -97,5 +97,52 @@ window.addEventListener("scroll", () => {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+// Grab all existing boxes on the page
+const allBoxes = Array.from(document.querySelectorAll(".box"));
 
+// Where results will be displayed
+const searchResultsContainer = document.querySelector(".search-results");
+
+// Input field
+const searchInput = document.getElementById("searchInput");
+
+// Initial load: show all
+renderResults(allBoxes);
+
+// Listen to search typing
+searchInput.addEventListener("input", function() {
+  const term = this.value.toLowerCase().trim();
+
+  if (term === "") {
+    renderResults(allBoxes);
+    return;
+  }
+
+  // Filter by alt text or data-title or video src
+  const filtered = allBoxes.filter(box => {
+    let text = "";
+
+    // Image
+    const img = box.querySelector("img");
+    if (img && img.alt) text += img.alt.toLowerCase();
+
+    // Video
+    const video = box.querySelector("video");
+    if (video && video.src) text += video.src.toLowerCase();
+
+    // Custom tags
+    if (box.dataset.title) text += box.dataset.title.toLowerCase();
+
+    return text.includes(term);
+  });
+
+  renderResults(filtered);
+});
+
+// Render the boxes inside search grid
+function renderResults(items) {
+  searchResultsContainer.innerHTML = "";
+  items.forEach(item => searchResultsContainer.appendChild(item));
+                                       }
   
+
