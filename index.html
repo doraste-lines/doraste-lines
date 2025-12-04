@@ -114,7 +114,8 @@
     <!-- Light/Dark Toggle -->
     <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Light/Dark Mode">🌙</button>
     <!-- About Button -->
-    <button class="about-btn" onclick="showAbout()">👤</button>
+    <button class="search-btn" onclick="showSearch()" title="Search 🔍">🔍</button>
+	  <button class="about-btn" onclick="showAbout()">👤</button>
 
     <header>
       <img src="logo.png" alt="Doraste_Lines Logo" class="logo" />
@@ -284,6 +285,18 @@
     </div>
   </section>
 
+	<section id="search" class="page">
+  <button class="back-btn" onclick="showHome()">←</button>
+  
+  <div class="search-content">
+    <h2>Search Content</h2>
+    <input type="text" id="searchInput" placeholder="Search tags..." />
+
+    <div id="tagList" class="tag-list"></div>
+    <div id="searchResults" class="grid"></div>
+  </div>
+																																							   </section>
+	
   <!-- Video Modal -->
   <div id="modal" onclick="closeModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
@@ -378,6 +391,7 @@ window.addEventListener('DOMContentLoaded', initLikeShare);
 	
 </body>
 </html>
+
 
 
 
