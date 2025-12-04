@@ -363,4 +363,57 @@ html {
 .about-btn {
   right: 20px; /* keep this */
 }  
+/* Search Page Container */
+.search-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Search Input */
+#searchInput {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+/* Box Items */
+.search-results .box {
+  display: block;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f7f7f7;
+  transition: transform 0.2s;
+}
+
+.search-results .box:hover {
+  transform: scale(1.03);
+}
+
+/* Images */
+.search-results .box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Videos */
+.search-results .box video {
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  border-radius: 12px;
+  }
 
