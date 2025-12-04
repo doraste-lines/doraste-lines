@@ -97,3 +97,38 @@ window.addEventListener("scroll", () => {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+function openModal(element) {
+  const modal = document.getElementById('modal');
+  const modalContent = modal.querySelector('.modal-content');
+  const modalVideo = modal.querySelector('video#modal-video');
+
+  // Clear previous content
+  modalContent.querySelectorAll('img, video').forEach(el => el.remove());
+
+  if (element.querySelector('img')) {
+    // IMAGE
+    const img = document.createElement('img');
+    img.src = element.querySelector('img').src;
+    img.alt = element.querySelector('img').alt || '';
+    modalContent.appendChild(img);
+  } else if (element.querySelector('video')) {
+    // VIDEO
+    const video = document.createElement('video');
+    video.src = element.querySelector('video source').src;
+    video.controls = true;
+    video.autoplay = true;
+    modalContent.appendChild(video);
+  }
+
+  modal.style.display = 'flex';
+}
+
+// Close modal
+function closeModal() {
+  const modal = document.getElementById('modal');
+  const modalContent = modal.querySelector('.modal-content');
+  modal.style.display = 'none';
+  // Stop video if exists
+  const video = modalContent.querySelector('video');
+  if (video) video.pause();
+}
