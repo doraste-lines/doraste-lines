@@ -9,6 +9,9 @@
   <meta name="author" content="Don Doraste Buntu">
   <meta name="robots" content="index, follow">
 
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#000000">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Doraste_Lines - Creative Words & Visual Art" />
   <meta property="og:description" content="Explore the creative sanctuary of Don Doraste Buntu with images, videos, and original creations." />
@@ -379,9 +382,15 @@ function initLikeShare() {
 window.addEventListener('DOMContentLoaded', initLikeShare);
 </script>
 	
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js");
+  }
+</script>
+
+
 </body>
 </html>
-
 
 
 
