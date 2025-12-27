@@ -417,4 +417,29 @@ html {
   border-radius: 12px;
   }
 
+.action-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+.action-btn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.action-btn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+
+
 
