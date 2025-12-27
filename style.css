@@ -417,23 +417,6 @@ html {
   border-radius: 12px;
   }
 
-.action-btn {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.6);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-}
-.action-btn svg {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
 
 /* Dark mode – force intro paragraph to turn white */
 body.dark .intro,
@@ -443,7 +426,7 @@ body.dark .hero-text p {
   color: #ffffff;
 }
 
-/* Like & Share button containers */
+/* Circle button */
 .box-actions button {
   width: 42px;
   height: 42px;
@@ -452,7 +435,7 @@ body.dark .hero-text p {
   border: none;
   cursor: pointer;
 
-  /* PERFECT CENTERING */
+  /* HARD CENTER */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,15 +443,20 @@ body.dark .hero-text p {
   padding: 0;
 }
 
-/* Icon inside buttons */
-.box-actions button svg,
-.box-actions button i {
+/* SVG icons */
+.box-actions button svg {
   width: 20px;
   height: 20px;
   display: block;
 }
 
-
+/* IMG icons (your case) */
+.box-actions button img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
+}
 
 
 
