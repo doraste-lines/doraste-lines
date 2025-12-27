@@ -443,6 +443,31 @@ body.dark .hero-text p {
   color: #ffffff;
 }
 
+/* Like & Share button containers */
+.box-actions button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  border: none;
+  cursor: pointer;
+
+  /* PERFECT CENTERING */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+}
+
+/* Icon inside buttons */
+.box-actions button svg,
+.box-actions button i {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 
 
 
