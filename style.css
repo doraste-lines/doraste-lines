@@ -458,5 +458,10 @@ body.dark .hero-text p {
   object-fit: contain;
 }
 
+.box-actions button img,
+.box-actions button svg {
+  transform: translateY(1px);
+}
+
 
 
