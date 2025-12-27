@@ -440,6 +440,14 @@ html {
   display: block;
 }
 
+/* Dark mode – force intro paragraph to turn white */
+body.dark .intro,
+body.dark .intro p,
+body.dark .hero p,
+body.dark .hero-text p {
+  color: #ffffff;
+}
+
 
 
 
