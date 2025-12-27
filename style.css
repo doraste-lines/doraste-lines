@@ -434,11 +434,6 @@ html {
   height: 20px;
   display: block;
 }
-.action-btn svg {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
 
 /* Dark mode – force intro paragraph to turn white */
 body.dark .intro,
@@ -447,6 +442,7 @@ body.dark .hero p,
 body.dark .hero-text p {
   color: #ffffff;
 }
+
 
 
 
