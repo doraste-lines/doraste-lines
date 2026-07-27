@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Primary site: https://doraste-lines.netlify.app/
+# Mirror: https://doraste-lines.github.io/doraste-lines/
+Sitemap: https://doraste-lines.netlify.app/sitemap.xml

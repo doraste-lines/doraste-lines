@@ -1,26 +1,27 @@
 {
   "name": "Doraste_Lines",
-  "short_name": " ",
-  "description": "Poetry, faith, insights, and visual reflections by Doraste_Lines.",
-  "start_url": "/",
-  "scope": "/",
+  "short_name": "Doraste_Lines",
+  "description": "Inspirational quote art, faith reflections, and visual poetry by Don Doraste Buntu.",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#f7f7f7",
+  "theme_color": "#121212",
   "orientation": "portrait",
+  "lang": "en",
+  "categories": ["art", "lifestyle", "books"],
   "icons": [
     {
-      "src": "/logo-192.png",
+      "src": "logo-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo-512.png",
+      "src": "logo-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ]
 }
-

@@ -1,0 +1,620 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://doraste-lines.netlify.app/#website",
+      "name": "Doraste_Lines",
+      "url": "https://doraste-lines.netlify.app/",
+      "description": "Inspirational quote art, visual poetry, and creative reflections by Don Doraste Buntu.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://doraste-lines.netlify.app/#person"
+      },
+      "sameAs": [
+        "https://doraste-lines.github.io/doraste-lines/",
+        "https://doraste-lines.netlify.app/"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://doraste-lines.netlify.app/#person",
+      "name": "Don Doraste Buntu",
+      "alternateName": [
+        "Doraste_Lines",
+        "doraste_lines"
+      ],
+      "description": "Writer, dreamer, and creator from Burundi, Africa.",
+      "jobTitle": "Writer and Visual Artist",
+      "url": "https://doraste-lines.netlify.app/",
+      "sameAs": [
+        "https://www.buymeacoffee.com/doraste_lines",
+        "https://doraste-lines.github.io/doraste-lines/"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://doraste-lines.netlify.app/#gallery",
+      "name": "Doraste_Lines Gallery",
+      "description": "A curated gallery of original inspirational quotes, faith reflections, motivational art, and visual poetry.",
+      "url": "https://doraste-lines.netlify.app/",
+      "isPartOf": {
+        "@id": "https://doraste-lines.netlify.app/#website"
+      },
+      "author": {
+        "@id": "https://doraste-lines.netlify.app/#person"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Doraste_Lines Quote Collection",
+        "numberOfItems": 94,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://doraste-lines.netlify.app/#box1",
+            "name": "Doraste_Lines Quote Art 1"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://doraste-lines.netlify.app/#box2",
+            "name": "Doraste_Lines Quote Art 2"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://doraste-lines.netlify.app/#box3",
+            "name": "Doraste_Lines Quote Art 3"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://doraste-lines.netlify.app/#box4",
+            "name": "Doraste_Lines Quote Art 4"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://doraste-lines.netlify.app/#box5",
+            "name": "Doraste_Lines Quote Art 5"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://doraste-lines.netlify.app/#box6",
+            "name": "Doraste_Lines Quote Art 6"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "url": "https://doraste-lines.netlify.app/#box7",
+            "name": "Doraste_Lines Quote Art 7"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "url": "https://doraste-lines.netlify.app/#box8",
+            "name": "Doraste_Lines Quote Art 8"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "url": "https://doraste-lines.netlify.app/#box9",
+            "name": "Doraste_Lines Quote Art 9"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "url": "https://doraste-lines.netlify.app/#box10",
+            "name": "Doraste_Lines Quote Art 10"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "url": "https://doraste-lines.netlify.app/#box11",
+            "name": "Doraste_Lines Quote Art 11"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "url": "https://doraste-lines.netlify.app/#box12",
+            "name": "Doraste_Lines Quote Art 12"
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "url": "https://doraste-lines.netlify.app/#box13",
+            "name": "Doraste_Lines Quote Art 13"
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "url": "https://doraste-lines.netlify.app/#box14",
+            "name": "Doraste_Lines Quote Art 14"
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "url": "https://doraste-lines.netlify.app/#box15",
+            "name": "Doraste_Lines Quote Art 15"
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "url": "https://doraste-lines.netlify.app/#box16",
+            "name": "Doraste_Lines Quote Art 16"
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "url": "https://doraste-lines.netlify.app/#box17",
+            "name": "Doraste_Lines Quote Art 17"
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "url": "https://doraste-lines.netlify.app/#box18",
+            "name": "Doraste_Lines Quote Art 18"
+          },
+          {
+            "@type": "ListItem",
+            "position": 19,
+            "url": "https://doraste-lines.netlify.app/#box19",
+            "name": "Doraste_Lines Quote Art 19"
+          },
+          {
+            "@type": "ListItem",
+            "position": 20,
+            "url": "https://doraste-lines.netlify.app/#box20",
+            "name": "Doraste_Lines Quote Art 20"
+          },
+          {
+            "@type": "ListItem",
+            "position": 21,
+            "url": "https://doraste-lines.netlify.app/#box21",
+            "name": "Doraste_Lines Quote Art 21"
+          },
+          {
+            "@type": "ListItem",
+            "position": 22,
+            "url": "https://doraste-lines.netlify.app/#box22",
+            "name": "Doraste_Lines Quote Art 22"
+          },
+          {
+            "@type": "ListItem",
+            "position": 23,
+            "url": "https://doraste-lines.netlify.app/#box23",
+            "name": "Doraste_Lines Quote Art 23"
+          },
+          {
+            "@type": "ListItem",
+            "position": 24,
+            "url": "https://doraste-lines.netlify.app/#box24",
+            "name": "Doraste_Lines Quote Art 24"
+          },
+          {
+            "@type": "ListItem",
+            "position": 25,
+            "url": "https://doraste-lines.netlify.app/#box25",
+            "name": "Doraste_Lines Quote Art 25"
+          },
+          {
+            "@type": "ListItem",
+            "position": 26,
+            "url": "https://doraste-lines.netlify.app/#box26",
+            "name": "Doraste_Lines Quote Art 26"
+          },
+          {
+            "@type": "ListItem",
+            "position": 27,
+            "url": "https://doraste-lines.netlify.app/#box27",
+            "name": "Doraste_Lines Quote Art 27"
+          },
+          {
+            "@type": "ListItem",
+            "position": 28,
+            "url": "https://doraste-lines.netlify.app/#box28",
+            "name": "Doraste_Lines Quote Art 28"
+          },
+          {
+            "@type": "ListItem",
+            "position": 29,
+            "url": "https://doraste-lines.netlify.app/#box29",
+            "name": "Doraste_Lines Quote Art 29"
+          },
+          {
+            "@type": "ListItem",
+            "position": 30,
+            "url": "https://doraste-lines.netlify.app/#box30",
+            "name": "Doraste_Lines Quote Art 30"
+          },
+          {
+            "@type": "ListItem",
+            "position": 31,
+            "url": "https://doraste-lines.netlify.app/#box31",
+            "name": "Doraste_Lines Quote Art 31"
+          },
+          {
+            "@type": "ListItem",
+            "position": 32,
+            "url": "https://doraste-lines.netlify.app/#box32",
+            "name": "Doraste_Lines Quote Art 32"
+          },
+          {
+            "@type": "ListItem",
+            "position": 33,
+            "url": "https://doraste-lines.netlify.app/#box33",
+            "name": "Doraste_Lines Quote Art 33"
+          },
+          {
+            "@type": "ListItem",
+            "position": 34,
+            "url": "https://doraste-lines.netlify.app/#box34",
+            "name": "Doraste_Lines Quote Art 34"
+          },
+          {
+            "@type": "ListItem",
+            "position": 35,
+            "url": "https://doraste-lines.netlify.app/#box35",
+            "name": "Doraste_Lines Quote Art 35"
+          },
+          {
+            "@type": "ListItem",
+            "position": 36,
+            "url": "https://doraste-lines.netlify.app/#box36",
+            "name": "Doraste_Lines Quote Art 36"
+          },
+          {
+            "@type": "ListItem",
+            "position": 37,
+            "url": "https://doraste-lines.netlify.app/#box37",
+            "name": "Doraste_Lines Quote Art 37"
+          },
+          {
+            "@type": "ListItem",
+            "position": 38,
+            "url": "https://doraste-lines.netlify.app/#box38",
+            "name": "Doraste_Lines Quote Art 38"
+          },
+          {
+            "@type": "ListItem",
+            "position": 39,
+            "url": "https://doraste-lines.netlify.app/#box39",
+            "name": "Doraste_Lines Quote Art 39"
+          },
+          {
+            "@type": "ListItem",
+            "position": 40,
+            "url": "https://doraste-lines.netlify.app/#box40",
+            "name": "Doraste_Lines Quote Art 40"
+          },
+          {
+            "@type": "ListItem",
+            "position": 41,
+            "url": "https://doraste-lines.netlify.app/#box41",
+            "name": "Doraste_Lines Quote Art 41"
+          },
+          {
+            "@type": "ListItem",
+            "position": 42,
+            "url": "https://doraste-lines.netlify.app/#box42",
+            "name": "Doraste_Lines Quote Art 42"
+          },
+          {
+            "@type": "ListItem",
+            "position": 43,
+            "url": "https://doraste-lines.netlify.app/#box43",
+            "name": "Doraste_Lines Quote Art 43"
+          },
+          {
+            "@type": "ListItem",
+            "position": 44,
+            "url": "https://doraste-lines.netlify.app/#box44",
+            "name": "Doraste_Lines Quote Art 44"
+          },
+          {
+            "@type": "ListItem",
+            "position": 45,
+            "url": "https://doraste-lines.netlify.app/#box45",
+            "name": "Doraste_Lines Quote Art 45"
+          },
+          {
+            "@type": "ListItem",
+            "position": 46,
+            "url": "https://doraste-lines.netlify.app/#box46",
+            "name": "Doraste_Lines Quote Art 46"
+          },
+          {
+            "@type": "ListItem",
+            "position": 47,
+            "url": "https://doraste-lines.netlify.app/#box47",
+            "name": "Doraste_Lines Quote Art 47"
+          },
+          {
+            "@type": "ListItem",
+            "position": 48,
+            "url": "https://doraste-lines.netlify.app/#box48",
+            "name": "Doraste_Lines Quote Art 48"
+          },
+          {
+            "@type": "ListItem",
+            "position": 49,
+            "url": "https://doraste-lines.netlify.app/#box49",
+            "name": "Doraste_Lines Quote Art 49"
+          },
+          {
+            "@type": "ListItem",
+            "position": 50,
+            "url": "https://doraste-lines.netlify.app/#box50",
+            "name": "Doraste_Lines Quote Art 50"
+          },
+          {
+            "@type": "ListItem",
+            "position": 51,
+            "url": "https://doraste-lines.netlify.app/#box51",
+            "name": "Doraste_Lines Quote Art 51"
+          },
+          {
+            "@type": "ListItem",
+            "position": 52,
+            "url": "https://doraste-lines.netlify.app/#box52",
+            "name": "Doraste_Lines Quote Art 52"
+          },
+          {
+            "@type": "ListItem",
+            "position": 53,
+            "url": "https://doraste-lines.netlify.app/#box53",
+            "name": "Doraste_Lines Quote Art 53"
+          },
+          {
+            "@type": "ListItem",
+            "position": 54,
+            "url": "https://doraste-lines.netlify.app/#box54",
+            "name": "Doraste_Lines Quote Art 54"
+          },
+          {
+            "@type": "ListItem",
+            "position": 55,
+            "url": "https://doraste-lines.netlify.app/#box55",
+            "name": "Doraste_Lines Quote Art 55"
+          },
+          {
+            "@type": "ListItem",
+            "position": 56,
+            "url": "https://doraste-lines.netlify.app/#box56",
+            "name": "Doraste_Lines Quote Art 56"
+          },
+          {
+            "@type": "ListItem",
+            "position": 57,
+            "url": "https://doraste-lines.netlify.app/#box57",
+            "name": "Doraste_Lines Quote Art 57"
+          },
+          {
+            "@type": "ListItem",
+            "position": 58,
+            "url": "https://doraste-lines.netlify.app/#box58",
+            "name": "Doraste_Lines Quote Art 58"
+          },
+          {
+            "@type": "ListItem",
+            "position": 59,
+            "url": "https://doraste-lines.netlify.app/#box59",
+            "name": "Doraste_Lines Quote Art 59"
+          },
+          {
+            "@type": "ListItem",
+            "position": 60,
+            "url": "https://doraste-lines.netlify.app/#box60",
+            "name": "Doraste_Lines Quote Art 60"
+          },
+          {
+            "@type": "ListItem",
+            "position": 61,
+            "url": "https://doraste-lines.netlify.app/#box61",
+            "name": "Doraste_Lines Quote Art 61"
+          },
+          {
+            "@type": "ListItem",
+            "position": 62,
+            "url": "https://doraste-lines.netlify.app/#box62",
+            "name": "Doraste_Lines Quote Art 62"
+          },
+          {
+            "@type": "ListItem",
+            "position": 63,
+            "url": "https://doraste-lines.netlify.app/#box63",
+            "name": "Doraste_Lines Quote Art 63"
+          },
+          {
+            "@type": "ListItem",
+            "position": 64,
+            "url": "https://doraste-lines.netlify.app/#box64",
+            "name": "Doraste_Lines Quote Art 64"
+          },
+          {
+            "@type": "ListItem",
+            "position": 65,
+            "url": "https://doraste-lines.netlify.app/#box65",
+            "name": "Doraste_Lines Quote Art 65"
+          },
+          {
+            "@type": "ListItem",
+            "position": 66,
+            "url": "https://doraste-lines.netlify.app/#box66",
+            "name": "Doraste_Lines Quote Art 66"
+          },
+          {
+            "@type": "ListItem",
+            "position": 67,
+            "url": "https://doraste-lines.netlify.app/#box67",
+            "name": "Doraste_Lines Quote Art 67"
+          },
+          {
+            "@type": "ListItem",
+            "position": 68,
+            "url": "https://doraste-lines.netlify.app/#box68",
+            "name": "Doraste_Lines Quote Art 68"
+          },
+          {
+            "@type": "ListItem",
+            "position": 69,
+            "url": "https://doraste-lines.netlify.app/#box69",
+            "name": "Doraste_Lines Quote Art 69"
+          },
+          {
+            "@type": "ListItem",
+            "position": 70,
+            "url": "https://doraste-lines.netlify.app/#box70",
+            "name": "Doraste_Lines Quote Art 70"
+          },
+          {
+            "@type": "ListItem",
+            "position": 71,
+            "url": "https://doraste-lines.netlify.app/#box71",
+            "name": "Doraste_Lines Quote Art 71"
+          },
+          {
+            "@type": "ListItem",
+            "position": 72,
+            "url": "https://doraste-lines.netlify.app/#box72",
+            "name": "Doraste_Lines Quote Art 72"
+          },
+          {
+            "@type": "ListItem",
+            "position": 73,
+            "url": "https://doraste-lines.netlify.app/#box73",
+            "name": "Doraste_Lines Quote Art 73"
+          },
+          {
+            "@type": "ListItem",
+            "position": 74,
+            "url": "https://doraste-lines.netlify.app/#box74",
+            "name": "Doraste_Lines Quote Art 74"
+          },
+          {
+            "@type": "ListItem",
+            "position": 75,
+            "url": "https://doraste-lines.netlify.app/#box75",
+            "name": "Doraste_Lines Quote Art 75"
+          },
+          {
+            "@type": "ListItem",
+            "position": 76,
+            "url": "https://doraste-lines.netlify.app/#box76",
+            "name": "Doraste_Lines Quote Art 76"
+          },
+          {
+            "@type": "ListItem",
+            "position": 77,
+            "url": "https://doraste-lines.netlify.app/#box77",
+            "name": "Doraste_Lines Quote Art 77"
+          },
+          {
+            "@type": "ListItem",
+            "position": 78,
+            "url": "https://doraste-lines.netlify.app/#box78",
+            "name": "Doraste_Lines Quote Art 78"
+          },
+          {
+            "@type": "ListItem",
+            "position": 79,
+            "url": "https://doraste-lines.netlify.app/#box79",
+            "name": "Doraste_Lines Quote Art 79"
+          },
+          {
+            "@type": "ListItem",
+            "position": 80,
+            "url": "https://doraste-lines.netlify.app/#box80",
+            "name": "Doraste_Lines Quote Art 80"
+          },
+          {
+            "@type": "ListItem",
+            "position": 81,
+            "url": "https://doraste-lines.netlify.app/#box81",
+            "name": "Doraste_Lines Quote Art 81"
+          },
+          {
+            "@type": "ListItem",
+            "position": 82,
+            "url": "https://doraste-lines.netlify.app/#box82",
+            "name": "Doraste_Lines Quote Art 82"
+          },
+          {
+            "@type": "ListItem",
+            "position": 83,
+            "url": "https://doraste-lines.netlify.app/#box83",
+            "name": "Doraste_Lines Quote Art 83"
+          },
+          {
+            "@type": "ListItem",
+            "position": 84,
+            "url": "https://doraste-lines.netlify.app/#box84",
+            "name": "Doraste_Lines Quote Art 84"
+          },
+          {
+            "@type": "ListItem",
+            "position": 85,
+            "url": "https://doraste-lines.netlify.app/#box85",
+            "name": "Doraste_Lines Quote Art 85"
+          },
+          {
+            "@type": "ListItem",
+            "position": 86,
+            "url": "https://doraste-lines.netlify.app/#box86",
+            "name": "Doraste_Lines Quote Art 86"
+          },
+          {
+            "@type": "ListItem",
+            "position": 87,
+            "url": "https://doraste-lines.netlify.app/#box87",
+            "name": "Doraste_Lines Quote Art 87"
+          },
+          {
+            "@type": "ListItem",
+            "position": 88,
+            "url": "https://doraste-lines.netlify.app/#box88",
+            "name": "Doraste_Lines Quote Art 88"
+          },
+          {
+            "@type": "ListItem",
+            "position": 89,
+            "url": "https://doraste-lines.netlify.app/#box89",
+            "name": "Doraste_Lines Quote Art 89"
+          },
+          {
+            "@type": "ListItem",
+            "position": 90,
+            "url": "https://doraste-lines.netlify.app/#box90",
+            "name": "Doraste_Lines Quote Art 90"
+          },
+          {
+            "@type": "ListItem",
+            "position": 91,
+            "url": "https://doraste-lines.netlify.app/#box91",
+            "name": "Doraste_Lines Quote Art 91"
+          },
+          {
+            "@type": "ListItem",
+            "position": 92,
+            "url": "https://doraste-lines.netlify.app/#box92",
+            "name": "Doraste_Lines Quote Art 92"
+          },
+          {
+            "@type": "ListItem",
+            "position": 93,
+            "url": "https://doraste-lines.netlify.app/#box93",
+            "name": "Doraste_Lines Quote Art 93"
+          },
+          {
+            "@type": "ListItem",
+            "position": 94,
+            "url": "https://doraste-lines.netlify.app/#box94",
+            "name": "Doraste_Lines Quote Art 94"
+          }
+        ]
+      }
+    }
+  ]
+}
