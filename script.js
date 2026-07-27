@@ -900,8 +900,9 @@ function initCategoryFilters() {
 // Protect content
 function initContentProtection() {
   document.addEventListener("contextmenu", (e) => e.preventDefault());
-  document.querySelectorAll("img").forEach((img) => {
-    img.addEventListener("dragstart", (e) => e.preventDefault());
+  document.addEventListener("selectstart", (e) => e.preventDefault());
+  document.querySelectorAll("img, video").forEach((el) => {
+    el.addEventListener("dragstart", (e) => e.preventDefault());
   });
   document.addEventListener("keydown", (e) => {
     if (
