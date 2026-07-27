@@ -149,7 +149,7 @@
       <img src="logo.png" alt="Doraste_Lines — inspirational quote art and visual poetry by Don Doraste Buntu" class="logo" width="120" height="120" fetchpriority="high" decoding="async" />
       <h1>Doraste_Lines</h1>
       <p class="intro">
-        Welcome to my sanctuary — a gallery of original inspirational quotes, faith reflections, and visual poetry. Words, imagination, and quiet beauty by Don Doraste Buntu.
+        Welcome to my sanctuary — a place where words, imagination, verses, and fleeting thoughts create moments of quiet beauty.
       </p>
     </header>
 
@@ -335,8 +335,12 @@
 
   <!-- Video Modal -->
   <div id="modal" onclick="closeModal()">
+    <div class="modal-controls" onclick="event.stopPropagation()">
+      <button type="button" class="close" onclick="closeModal()" aria-label="Close video">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
     <div class="modal-content" onclick="event.stopPropagation()">
-      <button type="button" class="close" onclick="closeModal()" aria-label="Close video">&times;</button>
       <video id="modal-video" controls></video>
     </div>
   </div>
