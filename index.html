@@ -3,6 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f7f7">
+  <!-- Apply saved theme before first paint to prevent light/dark flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var isDark = saved === "dark" || (!saved && prefersDark);
+        if (isDark) {
+          document.documentElement.classList.add("dark");
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.content = "#121212";
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    html { background-color: #f7f7f7; }
+    html.dark { background-color: #121212; color-scheme: dark; }
+  </style>
   <title>Doraste_Lines | Inspirational Quote Art & Visual Poetry by Don Doraste Buntu</title>
   <meta name="description" content="Discover Doraste_Lines — original inspirational quotes, faith reflections, motivational art, and visual poetry by Don Doraste Buntu from Burundi. Browse 90+ quote images, videos, and creative work.">
   <meta name="keywords" content="Doraste_Lines, Don Doraste Buntu, doraste_lines, inspirational quotes, quote art, visual poetry, motivational art, faith quotes, Bible verses, creative writing, poetry, art, Africa, Burundi, wisdom quotes, life quotes">
@@ -16,7 +36,6 @@
   <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
 
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#f7f7f7">
   <meta name="application-name" content="Doraste_Lines">
   <meta name="apple-mobile-web-app-title" content="Doraste_Lines">
   <meta name="apple-mobile-web-app-capable" content="yes">

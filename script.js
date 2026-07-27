@@ -444,11 +444,15 @@ function setupVideoPreviews() {
 }
 
 // Light/Dark Mode Toggle
+function isDarkTheme() {
+  return document.documentElement.classList.contains("dark");
+}
+
 function initTheme() {
   const saved = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const isDark = saved === "dark" || (!saved && prefersDark);
-  document.body.classList.toggle("dark", isDark);
+  document.documentElement.classList.toggle("dark", isDark);
   updateThemeIcon();
   updateMetaThemeColor();
 }
@@ -456,20 +460,19 @@ function initTheme() {
 function updateThemeIcon() {
   const toggleBtn = document.querySelector(".theme-toggle i");
   if (!toggleBtn) return;
-  const isDark = document.body.classList.contains("dark");
-  toggleBtn.className = isDark ? "fa-solid fa-sun" : "fa-solid fa-moon";
+  toggleBtn.className = isDarkTheme() ? "fa-solid fa-sun" : "fa-solid fa-moon";
 }
 
 function updateMetaThemeColor() {
   const meta = document.querySelector('meta[name="theme-color"]');
   if (meta) {
-    meta.content = document.body.classList.contains("dark") ? "#121212" : "#f7f7f7";
+    meta.content = isDarkTheme() ? "#121212" : "#f7f7f7";
   }
 }
 
 function toggleTheme() {
-  document.body.classList.toggle("dark");
-  const isDark = document.body.classList.contains("dark");
+  document.documentElement.classList.toggle("dark");
+  const isDark = isDarkTheme();
   localStorage.setItem("theme", isDark ? "dark" : "light");
   updateThemeIcon();
   updateMetaThemeColor();
